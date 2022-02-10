@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="company">ENVELO</h2>
+      <p>Możesz mieć swoją przesyłkę w kilkanaście sekund.</p>
+      <p>Rozpocznij kilkając w przycisk.</p>
+      <form class="input-container hidden">
+        <label for="phone-in">
+          Numer telefonu
+          <input type="number" id="phone-in" />
+          <p class="valid-phone">Numer Telefonu musi być 9 cyfrowy.</p></label
+        >
+
+        <label for="code-in">
+          Kod odbioru <input type="number" id="code-in"" />
+          <p class="valid-code">Kod odbioru musi być 4 cyfrowy.</p></label
+        >
+      </form>
+      <button class="main-btn">START</button>
+    </div>
+
+    <div class="modal hidden">
+      <div class="info-window">
+        <h2>Paczka odebrana!</h2>
+        <p>
+          Zrobiłeś to w czasie <span class="timer">0</span> sekund! Czy możemy
+          zrobić dla Ciebie coś jeszcze?
+        </p>
+        <button class="end-btn">To wszystko na dziś</button>
+        <button class="next-btn">Odbierz kolejną paczkę</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
